@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Webpage Design</title>
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/style.css'%}" />
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+
+	<div class="main">
+		<div class="navbar">
+			<div class="icon">
+				<img class="logo" src="{% static 'prescribeme/images/logo.png' %}" />
+			</div>
+
+			<div class="menu">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#about-us">ABOUT</a></li>
+					<li><a href="#">Dasboard</a></li>
+					<li><a href="#">CONTACT</a></li>
+					<li><a href="/login">Login/SignUp</a></li>
+				</ul>
+			</div>
+
+
+
+
+			<!-- <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div> -->
+
+		</div>
+		<div class="content">
+			<div class="block1">
+				<h1>PrescribeMe</h1>
+				<div class="type">
+					<p>The better way to <span class="autotype"></span> prescription</p>
+				</div>
+				<p class="par">"The human body experiences a powerful gravitional pull in the direction of hope.
+					that is why the patient's hopes are the physicians secret weapon.They are the hidden ingrediants in
+					any prescription"
+					<br>
+					-Norman Cousins-
+				</p>
+
+
+				<!-- <button class="cn"><a href="#">JOIN US</a></button> -->
+			</div>
+			<div class="block2"> <img src="{% static 'prescribeme/images/homepage.png' %}" alt="home" width="90%"></div>
+
+		</div>
+
+		<section class="testimonial">
+			<div>
+				<h1>Read what our customers say</h1>
+			</div>
+			<section id="testimonial_area" class="section_padding">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="testmonial_slider_area text-center owl-carousel">
+								<div class="box-area">
+									<div class="img-area">
+										<img src="{% static 'prescribeme/images/index.jpeg' %}" alt="">
+									</div>
+									<h5>Person's name</h5>
+									<span>Designation Goes Here</span>
+									<p class="feed">
+										Lorem Ipsum is simply dummy text of the printing and
+										typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+										ever since
+									</p>
+								</div>
+
+								<div class="box-area">
+									<div class="img-area">
+										<img src="{% static 'prescribeme/images/Asia.jpg' %}" alt="">
+									</div>
+									<h5>Person's name</h5>
+									<span>Designation Goes Here</span>
+									<p class="feed">
+										Lorem Ipsum is simply dummy text of the printing and
+										typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+										ever since
+									</p>
+
+								</div>
+
+								<div class="box-area">
+									<div class="img-area">
+										<img src="{% static 'prescribeme/images/img3.jpg' %}" alt="">
+									</div>
+									<h5>Person's name</h5>
+									<span>Designation Goes Here</span>
+									<p class="feed">
+										Lorem Ipsum is simply dummy text of the printing and
+										typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+										ever since
+									</p>
+
+								</div>
+
+								<div class="box-area">
+									<div class="img-area">
+										<img src="{% static 'prescribeme/images/4.jpg' %}" alt="">
+									</div>
+									<h5>Person's name</h5>
+									<span>Designation Goes Here</span>
+									<p class="feed">
+										Lorem Ipsum is simply dummy text of the printing and
+										typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+										ever since
+									</p>
+
+								</div>
+
+								<div class="box-area">
+									<div class="img-area">
+										<img src="{% static 'prescribeme/images/5.jpg' %}" alt="">
+									</div>
+									<h5>Person's name</h5>
+									<span>Designation Goes Here</span>
+									<p class="feed">
+										Lorem Ipsum is simply dummy text of the printing and
+										typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+										ever since
+									</p>
+								</div>
+
+								<div class="box-area">
+									<div class="img-area">
+										<img src="{% static 'prescribeme/images/6.jpg' %}" alt="">
+									</div>
+									<h5>Person's name5</h5>
+									<span>Designation Goes Here</span>
+									<p class="feed">
+										Lorem Ipsum is simply dummy text of the printing and
+										typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+										ever since
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</section>
+		<div id="about-us" class="aboutus">
+			<div>
+				<h1 class="About-us">About US</h1>
+			</div>
+			<div>
+				<p class="para">
+					PrescribeMe is a website which allows the customers to interact with doctors
+					and helps doctor keep past record of patients.
+				</p>
+			</div>
+		</div>
+		<a class="upbtn" href="#"><i class="fas fa-arrow-circle-up fa-3x" style="color: rgba(0, 0, 0, 0.781);"></i></a>
+		<footer class="footer">
+			<p class="copyright">Copyrights &copy; PrescribeMe</p>
+		</footer>
+	</div>
+	<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	{% block js_block %}
+	<script type="text/javascript" src="{% static 'js/home.js' %}"></script>
+	{% endblock %}
+
+
+</body>
+
+</html>
