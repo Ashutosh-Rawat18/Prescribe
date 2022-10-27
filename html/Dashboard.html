@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="main">
+
+
+        <div class="navigation">
+            <div class="icon">
+                <img class="logo" src="../logo.png">
+            </div>
+            
+                <div class="menu">
+                  <ul>
+                    <li><a href="./Index.html">HOME</a></li>
+                    <li><a href="./Index.html#about-us">ABOUT</a></li>
+                    <li><a href="#">Dasboard</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="./loginchoice.html">Login/SignUp</a></li>
+                   </ul>
+                </div>
+        </div>
+        <div id="sidebar">
+            <div class="toggle-btn" onclick="show()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="side-contents">
+            <div class="img-area"> <img src="../Asia.jpg" ></div>
+
+            <div class="details">
+                <label>Username:  </label><label>Mukesh</label><br>
+                <label>patientID:  </label><label>0908</label>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function show(){
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
